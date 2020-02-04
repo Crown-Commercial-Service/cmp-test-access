@@ -47,8 +47,7 @@ Feature:  MC - Accessibility
     Given the user is on the "MC Home" page
     When user clicks "Start now"
     When user clicks "Sign in with Cognito"
-    When user is on "Confirm you need management co
-  nsultancy" page
+    When user is on "Confirm you need management consultancy" page
     When user clicks "Confirm and continue"
     When user is on "Select the services you need" page
     When user is on "Select the regions you want the consultants to work" page

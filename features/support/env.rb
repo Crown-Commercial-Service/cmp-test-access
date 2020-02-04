@@ -28,6 +28,7 @@ Capybara.default_driver = :selenium
 #
 # # # # # # # # # # # # #
 $envFM = 'https://cmp.cmpdev.crowncommercial.gov.uk/facilities-management/beta'
+#$envFM = 'https://cmp.fm-preview.crowncommercial.gov.uk/facilities-management/beta'
 $envLS = 'https://cmp.cmpdev.crowncommercial.gov.uk/legal-services'
 $envMC = 'https://cmp.cmpdev.crowncommercial.gov.uk/management-consultancy'
 

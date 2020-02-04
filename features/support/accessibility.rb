@@ -19,6 +19,6 @@ end
 #end
 
 def clk_on(obj)
-  #click_on obj.to_s.gsub('_page','').gsub('_',' ').capitalize
-  click_on obj
+  click_on obj.to_s.gsub('_page','').gsub('_',' ').capitalize
+  #click_on obj
 end

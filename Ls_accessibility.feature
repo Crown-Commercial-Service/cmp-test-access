@@ -1,3 +1,5 @@
+
+
 Feature:  LS - Accessibility
 
 
@@ -16,7 +18,6 @@ Feature:  LS - Accessibility
   Scenario: LS - Do you work for central government page
     Given the user is on the "LS Home" page
     When user clicks "Start now"
-
     When user clicks "Sign in with Cognito"
     Then user is on "Do you work for central government" page
 
