@@ -99,9 +99,11 @@ When(/^user is on "([^"]*)" page$/) do |page1|
     when 'contract period'
       find_link('Answer question', match: :first).send_keys(:tab,:tab,:tab,:enter)
     when 'results'
-      find(:css,"#main-content > details > summary > span").click
-      find(:css,"#edit_facilities_management_procurement_6a84603b-457d-4ba7-809c-b03c64511e23 > fieldset > div > div > div:nth-child(1) > details > summary > span").click
-      find(:css,"#edit_facilities_management_procurement_6a84603b-457d-4ba7-809c-b03c64511e23 > fieldset > div > div > div:nth-child(2) > details > summary > span").click
+      find(:css, 'details.govuk-details.govuk-\!-width-two-thirds.govuk-\!-margin-bottom-6 > summary > span').click
+      find(:css, 'details:nth-child(62) > summary > span').click
+      find(:css, 'details:nth-child(63) > summary > span').click
+      find(:css, 'div:nth-child(1) > details > summary > span').click
+      find(:css, 'div:nth-child(2) > details > summary > span').click
     when 'create single building'
       find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
     when 'create single building page 2'
