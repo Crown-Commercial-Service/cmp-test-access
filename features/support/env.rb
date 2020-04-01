@@ -40,7 +40,4 @@ $envMC = 'https://cmp.cmpdev.crowncommercial.gov.uk/management-consultancy/sign-
 #
 # # # # # # # # # # # # #
 $user = "autotest1@crowncommercial.gov.uk"
-$p = "1Pass2!?"
 
-#$user = "iulia@ionita.me"
-#$p = "Test12345!"
