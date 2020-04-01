@@ -4,6 +4,7 @@ Feature:  FM - Accessibility
     Given the user is on the "FM Home" page
 
   Scenario:  FM - Cognito page
+
     Given the user is on the "FM Home" page
     When user clicks "Start now"
 
@@ -26,12 +27,12 @@ Feature:  FM - Accessibility
     Then user is on "Start a new procurement" page
 
 # Timeout
-#  Scenario: FM - Manage procurements page
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
+  Scenario: FM - Manage procurements page
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
 
   Scenario: FM - Manage buildings page
     Given the user is on the "FM Home" page
@@ -563,6 +564,7 @@ Feature:  FM - Accessibility
     Then user is on "Procurements dashboard" page
     And user clicks "accessibility4"
     And user is on "results" page
+
 
   Scenario: FM - Detailed Search - Results 2
     Given the user is on the "FM Home" page
