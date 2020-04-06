@@ -19,6 +19,8 @@ Capybara.register_driver :selenium do |app|
                                          'prefs' => {
                                              'plugins.plugins_disabled' => ["Chrome PDF Viewer"]}}))
 end
+
+
 Capybara.default_driver = :selenium
 
 
@@ -30,7 +32,7 @@ Capybara.default_driver = :selenium
 $envFM = 'https://cmp.cmpdev.crowncommercial.gov.uk/facilities-management/beta'
 #$envFM = 'https://cmp.fm-preview.crowncommercial.gov.uk/facilities-management/beta'
 $envLS = 'https://cmp.cmpdev.crowncommercial.gov.uk/legal-services'
-$envLS = 'https://marketplace.preview.crowncommercial.gov.uk/legal-services/sign-in'
+#$envLS = 'https://marketplace.preview.crowncommercial.gov.uk/legal-services/sign-in'
 $envMC = 'https://cmp.cmpdev.crowncommercial.gov.uk/management-consultancy/sign-in'
 #$envMC = 'https://marketplace.preview.crowncommercial.gov.uk/management-consultancy/sign-in'
 
@@ -41,3 +43,5 @@ $envMC = 'https://cmp.cmpdev.crowncommercial.gov.uk/management-consultancy/sign-
 # # # # # # # # # # # # #
 $user = "autotest1@crowncommercial.gov.uk"
 $p = "1Pass2!?"
+#$user = 'iulia@ionita.me'
+#p = 'Test12345!'

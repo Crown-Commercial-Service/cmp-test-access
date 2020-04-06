@@ -1,6 +1,7 @@
 def sign_in_page()
-  fill_in('email', with: $user)
-  fill_in('password', with: $p)
+  find_by_id("email").click
+  fill_in("email", with: $user)
+  fill_in("password", with: $p)
   click_on "Sign in"
 end
 

@@ -142,7 +142,7 @@ When(/^user is on "([^"]*)" page$/) do |page1|
       find("label", text: 'Tees Valley and Durham').click
       click_on 'Continue'
     when 'supplier results 2'
-      #find("label", text: 'North East').click
+      find("label", text: 'North East').click
       click_on 'Continue'
     when 'download the supplier list'
       click_on 'Download the supplier list'
