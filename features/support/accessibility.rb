@@ -6,7 +6,7 @@ def sign_in_page()
 end
 
 def simple_rbtn_page(opt)
-  puts "opt = {opt}"
+  puts "opt = #{opt}"
   find("label", text: opt.capitalize).click
   click_on 'Continue'
 end

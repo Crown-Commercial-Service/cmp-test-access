@@ -1,8 +1,7 @@
+
 Given(/^the user is on the "([^"]*)" page$/) do |app|
 
   case app
-
-
     when "FM Home"
       $url = $envFM
     when "LS Home"
@@ -18,12 +17,16 @@ Given(/^the user is on the "([^"]*)" page$/) do |app|
 end
 
 When(/^user clicks "([^"]*)"$/) do |obj|
-  if (obj == 'commit')
-    click_on 'Continue'
-  elsif (obj == 'commit2')
-    find_by_id('Continue', match: :first).send_keys(:enter)
+  if ((obj == 'Start now' || obj == 'Sign in with Cognito') && ($url.include?('preview')))
+    puts "Skip: #{obj}"
   else
-    click_on obj
+    if (obj == 'commit')
+      click_on 'Continue'
+    elsif (obj == 'commit2')
+      find_by_id('Continue', match: :first).send_keys(:enter)
+    else
+      click_on obj
+    end
   end
   #sleep(3000)
 
