@@ -17,7 +17,7 @@ Given(/^the user is on the "([^"]*)" page$/) do |app|
 end
 
 When(/^user clicks "([^"]*)"$/) do |obj|
-  if ((obj == 'Start now' || obj == 'Sign in with Cognito') && ($url.include?('preview')))
+  if ((obj == 'Start now' || obj == 'Sign in with Cognito') && ($url.include?('marketplace') && ($url.include?('legal-services') || $url.include?('management-consultancy'))))
     puts "Skip: #{obj}"
   else
     if (obj == 'commit')
