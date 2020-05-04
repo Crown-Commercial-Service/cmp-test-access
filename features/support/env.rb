@@ -31,11 +31,11 @@ Capybara.default_driver = :selenium
 # # # # # # # # # # # # #
 $envFM = 'https://cmp.cmpdev.crowncommercial.gov.uk/facilities-management/beta'
 #$envFM = 'https://cmp.fm-preview.crowncommercial.gov.uk/facilities-management/beta'
-$envLS = 'https://cmp.cmpdev.crowncommercial.gov.uk/legal-services'
-#$envLS = 'https://marketplace.preview.crowncommercial.gov.uk/legal-services/sign-in'
+#$envLS = 'https://cmp.cmpdev.crowncommercial.gov.uk/legal-services'
+$envLS = 'https://marketplace.preview.crowncommercial.gov.uk/legal-services/sign-in'
 #$envLS = 'https://cmp.fm-preview.crowncommercial.gov.uk/legal-services/'
-$envMC = 'https://cmp.cmpdev.crowncommercial.gov.uk/management-consultancy/'
-#$envMC = 'https://marketplace.preview.crowncommercial.gov.uk/management-consultancy/sign-in'
+#$envMC = 'https://cmp.cmpdev.crowncommercial.gov.uk/management-consultancy/'
+$envMC = 'https://marketplace.preview.crowncommercial.gov.uk/management-consultancy/sign-in'
 #$envMC = 'https://cmp.fm-preview.crowncommercial.gov.uk/management-consultancy/'
 
 # # # # # # # # # # # # #
@@ -45,4 +45,6 @@ $envMC = 'https://cmp.cmpdev.crowncommercial.gov.uk/management-consultancy/'
 # # # # # # # # # # # # #
 $user = "autotest1@crowncommercial.gov.uk"
 $p = "1Pass2!?"
+#$user = "iulia@ionita.me"
+#$p = "Test12345!"
 

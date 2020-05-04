@@ -171,30 +171,47 @@ When(/^user is on "([^"]*)" page$/) do |page1|
       find(:css, 'div:nth-child(2) > details > summary > span').click
     when 'create single building'
       find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
-    when 'create single building page 2'
-      fill_in('fm-building-name', with: 'Access_' + $value)
-      fill_in('fm-bm-postcode', with: 'WC2A 1AA')
+    when 'add building add address'
+      fill_in('facilities_management_building_building_name', with: 'Access_' + $value)
+      fill_in('postcode_entry', with: 'WC2A 1AA')
       #find_by_id('fm-cant-find-address-link', visible:false).click # element not interactable
       #find_by_id('fm-bm-postcode').send_keys(:tab,:tab,:enter) # FM-733
-      find_by_id('fm-bm-postcode').send_keys(:tab,:enter)
-      find_by_id('fm-find-address-results').click
-      find_by_id('fm-find-address-results').send_keys(:down,:enter)
-      find_by_id('fm-bm-save-and-continue').click
-      find_by_id('fm-bm-internal-square-area')
-      find_by_id('fm-bm-save-and-continue').click
-    when 'create single building page 3'
-      fill_in('fm-bm-internal-square-area', with: '500')
+      #find_by_id('fm-bm-postcode').send_keys(:tab,:enter)
+      #find_by_id('fm-find-address-results').click
+      click_on 'Find address'
+      click_on 'add_address'
+      click_on 'commit'
+    #find_by_id('fm-find-address-results').send_keys(:down,:enter)
+    #find_by_id('fm-bm-save-and-continue').click
+    #find_by_id('fm-bm-internal-square-area')
+    #find_by_id('fm-bm-save-and-continue').click
+    when 'add building page 2'
+      fill_in('facilities_management_building_building_name', with: 'Access_' + $value)
+      fill_in('postcode_entry', with: 'WC2A 1AA')
+      #find_by_id('fm-cant-find-address-link', visible:false).click # element not interactable
+      #find_by_id('fm-bm-postcode').send_keys(:tab,:tab,:enter) # FM-733
+      #find_by_id('fm-bm-postcode').send_keys(:tab,:enter)
+      #find_by_id('fm-find-address-results').click
+      click_on 'Find address'
+      find_by_id('results-container').send_keys(:down,:enter,:enter)
+      click_on 'commit'
+      click_on 'commit'
+    #find_by_id('fm-bm-save-and-continue').click
+    #find_by_id('fm-bm-internal-square-area')
+    #find_by_id('fm-bm-save-and-continue').click
+    when 'add building page 3'
       #find_link('Skip this step').send_keys(:enter)
       #find(:css,'#fm-bm-building-type-form > div > details > summary > span').click
-      find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click.click
-      find(:css,'#fm-bm-building-type-form > div > details > summary > span').click
-      find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
+      ##find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click.click
+      ##find(:css,'#fm-bm-building-type-form > div > details > summary > span').click
+      ##find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
     when 'create single building page 4'
       choose('Heritage-Buildings', visible: false)
       find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
       find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
-      sleep(9)
+      #sleep(9)
     when 'checks'
+      #
     else
       clk_on(page1)
   end
