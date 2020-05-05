@@ -16,6 +16,7 @@ Given(/^the user is on the "([^"]*)" page$/) do |app|
   visit $url
 end
 
+
 When(/^user clicks "([^"]*)"$/) do |obj|
   if ((obj == 'Start now' || obj == 'Sign in with Cognito') && ($url.include?('marketplace') && ($url.include?('legal-services') || $url.include?('management-consultancy'))))
     puts "Skip: #{obj}"
@@ -69,11 +70,18 @@ When(/^user clicks link "([^"]*)"$/) do |func|
           find(:css,'tr:nth-child(4) > td.govuk-link.govuk-table__cell.govuk-link--no-visited-state > details > summary > span' ).click
           find(:css,'tr:nth-child(5) > td.govuk-link.govuk-table__cell.govuk-link--no-visited-state > details > summary > span' ).click
           find(:css,'tr:nth-child(7) > td.govuk-table__cell.govuk-link.govuk-link--no-visited-state > details > summary > span').click
-      else
+    when "review and generate documents"
+          find(:css,'div:nth-child(5) > div > table > tbody > tr:nth-child(7) > td > details > summary > span').click
+          find(:css,'div:nth-child(5) > div > table > tbody > tr:nth-child(8) > td > details > summary > span').click
+          find(:css,'div:nth-child(5) > div > table > tbody > tr:nth-child(10) > td > div > details > summary > span').click
+          find(:css,'div:nth-child(6) > div > table > tbody > tr:nth-child(3) > td.govuk-link.govuk-table__cell.govuk-link--no-visited-state > details > summary > span').click
+          find(:css,'div:nth-child(6) > div > table > tbody > tr:nth-child(4) > td.govuk-link.govuk-table__cell.govuk-link--no-visited-state > details > summary > span').click
+          #find(:css,'div:nth-child(6) > div > table > tbody > tr:nth-child(5) > td.govuk-link.govuk-table__cell.govuk-link--no-visited-state > details > summary > span').click
+
+    else
           puts "Unknown #{func}"
   end
 
-  #find_link('Answer question', match: :first).send_keys(:tab,:tab,:tab,:enter)
 end
 
 When(/^user chooses "([^"]*)"$/) do |obj|
@@ -205,11 +213,34 @@ When(/^user is on "([^"]*)" page$/) do |page1|
       ##find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click.click
       ##find(:css,'#fm-bm-building-type-form > div > details > summary > span').click
       ##find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
-    when 'create single building page 4'
-      choose('Heritage-Buildings', visible: false)
-      find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
-      find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
-      #sleep(9)
+      click_on 'Skip this step'
+      click_on 'commit'
+      #find_link('You must select a buiding type or describe your own').send_keys(:enter, :tab, :tab, :enter)
+      #choose('Other', visible: false)
+      #click_on 'commit'
+    when 'add building page 4'
+      #choose('Heritage-Buildings', visible: false)
+      #find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
+      #find(:xpath,'//*[@id="fm-bm-save-and-continue"]').click
+      click_on 'Skip this step'
+      #click_on 'save_and_return'
+      #choose('Other', visible: false)
+      #sleep 3000
+    when 'fm start'
+      find(:css,'#main-content > div.govuk-body > div:nth-child(2) > div.govuk-grid-column-one-third > details:nth-child(4) > summary > span').click
+      find(:css,'#main-content > div.govuk-body > div:nth-child(2) > div.govuk-grid-column-one-third > details:nth-child(5) > summary > span').click
+      find(:css,'#main-content > div.govuk-body > div:nth-child(2) > div.govuk-grid-column-one-third > details:nth-child(6) > summary > span').click
+    when 'contract summary'
+      find(:css,'#edit_facilities_management_procurement_supplier_44e78f96-40da-41a6-af9b-98bb791f575c > div.govuk-\!-width-two-thirds.govuk-\!-margin-bottom-6 > details > summary > span').click
+      find(:css,'#edit_facilities_management_procurement_supplier_44e78f96-40da-41a6-af9b-98bb791f575c > table:nth-child(8) > tbody > tr:nth-child(8) > td > details > summary > span').click
+      find(:css,'#edit_facilities_management_procurement_supplier_44e78f96-40da-41a6-af9b-98bb791f575c > table:nth-child(8) > tbody > tr:nth-child(9) > td > details > summary > span').click
+      find(:css,'#edit_facilities_management_procurement_supplier_44e78f96-40da-41a6-af9b-98bb791f575c > table:nth-child(8) > tbody > tr:nth-child(11) > td > div > details > summary > span').click
+    when 'contract summary declined'
+      find(:css,'#edit_facilities_management_procurement_supplier_aef59935-af41-47d8-9368-b71310d5ae3a > div.govuk-\!-width-two-thirds.govuk-\!-margin-bottom-6 > details > summary > span').click
+      find(:css,'#edit_facilities_management_procurement_supplier_aef59935-af41-47d8-9368-b71310d5ae3a > div.govuk-\!-margin-bottom-6.govuk-\!-width-three-quarters > details > summary > span').click
+      find(:css,'#edit_facilities_management_procurement_supplier_aef59935-af41-47d8-9368-b71310d5ae3a > table:nth-child(9) > tbody > tr:nth-child(8) > td > details > summary > span').click.click
+      find(:css,'#edit_facilities_management_procurement_supplier_aef59935-af41-47d8-9368-b71310d5ae3a > table:nth-child(9) > tbody > tr:nth-child(8) > td > details > summary > span').click
+      find(:css,'#edit_facilities_management_procurement_supplier_aef59935-af41-47d8-9368-b71310d5ae3a > table:nth-child(9) > tbody > tr:nth-child(11) > td > div > details > summary > span').click
     when 'checks'
       #
     else

@@ -1,17 +1,17 @@
 Feature:  FM - Accessibility
 
-  Scenario:  FM - Home page
-    Given the user is on the "FM Home" page
-
-  Scenario:  FM - Cognito page
-
-    Given the user is on the "FM Home" page
-    When user clicks "Start now"
-
-  Scenario:  FM - Login page
-    Given the user is on the "FM Home" page
-    When user clicks "Start now"
-    Then user clicks "Sign in with Cognito"
+#  Scenario:  FM - Home page
+#    Given the user is on the "FM Home" page
+#
+#  Scenario:  FM - Cognito page
+#
+#    Given the user is on the "FM Home" page
+#    When user clicks "Start now"
+#
+#  Scenario:  FM - Login page
+#    Given the user is on the "FM Home" page
+#    When user clicks "Start now"
+#    Then user clicks "Sign in with Cognito"
 
 #  Scenario: FM - Procurement page
 #    Given the user is on the "FM Home" page
@@ -43,13 +43,13 @@ Feature:  FM - Accessibility
 #    Then user is on "Manage buildings" page
 
 ## FM-1046
-  Scenario: FM - Manage buildings - Select Building - Detailed building summary
-    Given the user is on the "FM Home" page
-    When user clicks "Start now"
-    When user clicks "Sign in with Cognito"
-    When user is on "Procurements" page
-    Then user is on "Manage buildings" page
-    And user clicks "Auto Test 1"
+#  Scenario: FM - Manage buildings - Select Building - Detailed building summary
+#    Given the user is on the "FM Home" page
+#    When user clicks "Start now"
+#    When user clicks "Sign in with Cognito"
+#    When user is on "Procurements" page
+#    Then user is on "Manage buildings" page
+#    And user clicks "Auto Test 1"
 
 # Minor defect
 #  Scenario: FM - Manage buildings - Add a building - Step 1
@@ -84,16 +84,28 @@ Feature:  FM - Accessibility
 
 ## FM-1047
 #  Scenario: FM - Manage buildings - Add Building - Page 2
-    Given the user is on the "FM Home" page
-    When user clicks "Start now"
-    When user clicks "Sign in with Cognito"
-    When user is on "Procurements" page
-    Then user is on "Manage buildings" page
-    And user clicks "Add a building"
-    And user is on "Add Building Page 2" page
+#    Given the user is on the "FM Home" page
+#    When user clicks "Start now"
+#    When user clicks "Sign in with Cognito"
+#    When user is on "Procurements" page
+#    Then user is on "Manage buildings" page
+#    And user clicks "Add a building"
+#    And user is on "Add Building Page 2" page
 
 
-  Scenario: FM - Manage buildings - Add Building - Page 3
+# Defect FM-1050
+#  Scenario: FM - Manage buildings - Add Building - Page 3
+#    Given the user is on the "FM Home" page
+#    When user clicks "Start now"
+#    When user clicks "Sign in with Cognito"
+#    When user is on "Procurements" page
+#    Then user is on "Manage buildings" page
+#    And user clicks "Add a building"
+#    And user is on "Add Building Page 2" page
+#    And user is on "Add Building Page 3" page
+
+
+  Scenario: FM - Manage buildings - Add Building - Page 4
     Given the user is on the "FM Home" page
     When user clicks "Start now"
     When user clicks "Sign in with Cognito"
@@ -102,18 +114,7 @@ Feature:  FM - Accessibility
     And user clicks "Add a building"
     And user is on "Add Building Page 2" page
     And user is on "Add Building Page 3" page
-
-
-#  Scenario: FM - Manage buildings - Create Building - Page 4
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Manage buildings" page
-#    And user clicks "Create Single Building"
-#    And user is on "Create Single Building Page 2" page
-#    And user is on "Create Single Building Page 3" page
-#    And user is on "Create Single Building Page 4" page
+    And user is on "Add Building Page 4" page
 
 ## Issue Timeout
 ##  Scenario: FM - Start a new procurement page - open all
