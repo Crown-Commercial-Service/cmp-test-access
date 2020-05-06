@@ -94,15 +94,54 @@ Feature:  FM - Accessibility - In Draft
 #    Then user is on "Contract summary declined" page
 
 
-  Scenario: FM - Detailed Search - Sent Offer - Supplier Declined - View next Supplier
+# FM-1067
+#  Scenario: FM - Detailed Search - Sent Offer - Supplier Declined - View next Supplier
+#
+#    Given the user is on the "FM Home" page
+#    When user clicks "Start now"
+#    When user clicks "Sign in with Cognito"
+#    When user is on "Procurements" page
+#    Then user is on "Procurements dashboard" page
+#    When user clicks "0021"
+#    Then user clicks "View next supplier's price"
+#    Then user is on the "Offer to next supplier" page
+#    When user is on "Offer to next supplier" page
 
+
+#  Scenario: FM - Detailed Search - Sent Offer - Supplier no response
+#
+#    Given the user is on the "FM Home" page
+#    When user clicks "Start now"
+#    When user clicks "Sign in with Cognito"
+#    When user is on "Procurements" page
+#    Then user is on "Procurements dashboard" page
+#    When user clicks "0031"
+
+
+#  Scenario: FM - Detailed Search - Further Competition
+#
+#    Given the user is on the "FM Home" page
+#    When user clicks "Start now"
+#    When user clicks "Sign in with Cognito"
+#    When user is on "Procurements" page
+#    Then user is on "Procurements dashboard" page
+#    When user clicks "1"
+#    Then user is on "Further competition" page
+
+
+  Scenario: FM - Detailed Search - Further Competition - Copy Procurement
     Given the user is on the "FM Home" page
     When user clicks "Start now"
     When user clicks "Sign in with Cognito"
     When user is on "Procurements" page
     Then user is on "Procurements dashboard" page
-    When user clicks "0021"
-    #Then user clicks "View next supplier's price"
-    Then sleep "3000"
+    When user clicks "1"
+    Then user is on "Copy procurements" page
+
+
+#    Then user clicks "View next supplier's price"
+#    Then user is on the "Offer to next supplier" page
+#    When user is on "Offer to next supplier" page
+
 
 

@@ -94,18 +94,7 @@ Feature:  FM - Accessibility
 
 
 # Defect FM-1050
-#  Scenario: FM - Manage buildings - Add Building - Page 3
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Manage buildings" page
-#    And user clicks "Add a building"
-#    And user is on "Add Building Page 2" page
-#    And user is on "Add Building Page 3" page
-
-
-  Scenario: FM - Manage buildings - Add Building - Page 4
+  Scenario: FM - Manage buildings - Add Building - Page 3
     Given the user is on the "FM Home" page
     When user clicks "Start now"
     When user clicks "Sign in with Cognito"
@@ -114,7 +103,18 @@ Feature:  FM - Accessibility
     And user clicks "Add a building"
     And user is on "Add Building Page 2" page
     And user is on "Add Building Page 3" page
-    And user is on "Add Building Page 4" page
+
+
+#  Scenario: FM - Manage buildings - Add Building - Page 4
+#    Given the user is on the "FM Home" page
+#    When user clicks "Start now"
+#    When user clicks "Sign in with Cognito"
+#    When user is on "Procurements" page
+#    Then user is on "Manage buildings" page
+#    And user clicks "Add a building"
+#    And user is on "Add Building Page 2" page
+#    And user is on "Add Building Page 3" page
+#    And user is on "Add Building Page 4" page
 
 ## Issue Timeout
 ##  Scenario: FM - Start a new procurement page - open all

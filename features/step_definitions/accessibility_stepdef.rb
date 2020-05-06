@@ -116,7 +116,7 @@ When(/^user is on "([^"]*)" page$/) do |page1|
   case page1.downcase
     when 'datetime'
       # ToDo
-    when 'procurements'
+    when 'procurements', 'dashboard'
       sign_in_page()
     when 'manage buildings'
       click_on 'Manage buildings'
@@ -241,6 +241,35 @@ When(/^user is on "([^"]*)" page$/) do |page1|
       find(:css,'#edit_facilities_management_procurement_supplier_aef59935-af41-47d8-9368-b71310d5ae3a > table:nth-child(9) > tbody > tr:nth-child(8) > td > details > summary > span').click.click
       find(:css,'#edit_facilities_management_procurement_supplier_aef59935-af41-47d8-9368-b71310d5ae3a > table:nth-child(9) > tbody > tr:nth-child(8) > td > details > summary > span').click
       find(:css,'#edit_facilities_management_procurement_supplier_aef59935-af41-47d8-9368-b71310d5ae3a > table:nth-child(9) > tbody > tr:nth-child(11) > td > div > details > summary > span').click
+    when 'offer to next supplier'
+      find(:css,'#edit_facilities_management_procurement_supplier_aef59935-af41-47d8-9368-b71310d5ae3a > div:nth-child(6) > details > summary > span').click
+    when 'further competition'
+      find(:css,'#main-content > div:nth-child(4) > div:nth-child(3) > details > summary > span').click
+      click_on 'Show all'
+      find(:css,'#main-content > div.govuk-grid-row > div.govuk-grid-column-two-thirds.govuk-\!-padding-bottom-3 > details > summary > span').click
+    when 'copy procurements'
+      click_on 'Make a copy of your requirements'
+      click_on 'Save and continue'
+    when 'sign in error'
+      click_on 'Sign in'
+    when 'reset password'
+      click_on "I've forgotten my password"
+    when 'reset password error'
+      click_on "I've forgotten my password"
+      click_on 'Send reset email'
+    when 'received offer'
+      find(:css,'#main-content > div:nth-child(8) > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > table:nth-child(1) > tbody > tr:nth-child(8) > td > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > table:nth-child(1) > tbody > tr:nth-child(9) > td > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > table:nth-child(1) > tbody > tr:nth-child(11) > td > div > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > div.govuk-\!-width-three-quarters.govuk-\!-font-size-19 > dl > table > tbody > tr:nth-child(2) > td > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > div:nth-child(7) > details:nth-child(2) > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > div:nth-child(7) > div > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > div:nth-child(7) > details:nth-child(4) > summary > span').click
+    when 'respond to contract offer'
+      #find(:xpath,'//*[@id="main-content"]/div[6]/div[4]/a[1]/text()').click
+      click_on 'Respond to this offer'
+      click_on 'commit'
     when 'checks'
       #
     else
