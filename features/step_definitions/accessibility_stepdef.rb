@@ -270,6 +270,24 @@ When(/^user is on "([^"]*)" page$/) do |page1|
       #find(:xpath,'//*[@id="main-content"]/div[6]/div[4]/a[1]/text()').click
       click_on 'Respond to this offer'
       click_on 'commit'
+    when 'accepted offer'
+      find(:css,'#main-content > div:nth-child(8) > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > table:nth-child(1) > tbody > tr:nth-child(8) > td > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > table:nth-child(1) > tbody > tr:nth-child(11) > td > div:nth-child(1) > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > table:nth-child(1) > tbody > tr:nth-child(11) > td > div:nth-child(2) > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > div.govuk-\!-width-three-quarters.govuk-\!-font-size-19 > dl > table > tbody > tr:nth-child(2) > td > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > div:nth-child(6) > details:nth-child(3) > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > div:nth-child(6) > div.govuk-\!-margin-bottom-4.govuk-\!-margin-top-4 > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > div:nth-child(6) > div:nth-child(5) > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > div:nth-child(6) > details:nth-child(6) > summary > span').click
+    when "contract accepted signed"
+      find(:css,'#main-content > div:nth-child(8) > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > table:nth-child(1) > tbody > tr:nth-child(8) > td > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > table:nth-child(1) > tbody > tr:nth-child(9) > td > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > table:nth-child(1) > tbody > tr:nth-child(11) > td > div > details > summary > span').click
+      find(:css,'#main-content > div.govuk-\!-font-size-19 > div.govuk-\!-width-three-quarters.govuk-\!-font-size-19 > dl > table > tbody > tr:nth-child(2) > td > details > summary > span').click
+    when 'contract declined'
+      find(:css,'#main-content > div.govuk-\!-width-two-thirds.govuk-\!-margin-bottom-6 > details > summary > span').click
     when 'checks'
       #
     else

@@ -32,8 +32,6 @@ Feature:  FM - Accessibility - Supplier
 #    Given the user is on the "FM Home" page
 #    When user is on "Dashboard" page
 
-
-
 ## FM-1073
 #  Scenario: FM Supplier - Dashboard - Received Offers
 #
@@ -42,14 +40,54 @@ Feature:  FM - Accessibility - Supplier
 #    And user clicks "Auto_20200320_11e21384-d632-423c-9d79-638c642b93afAuto_20200320_Contract_71401189-92de-4c62-8343-a51"
 #    Then user is on "Received offer" page
 
+## FM-1075
+#  Scenario: FM Supplier - Dashboard - Received Offers - Respond to the contract offer
+#
+#    Given the user is on the "FM Home" page
+#    When user is on "Dashboard" page
+#    And user clicks "Auto_20200320_11e21384-d632-423c-9d79-638c642b93afAuto_20200320_Contract_71401189-92de-4c62-8343-a51"
+#    #Then user is on "Received offer" page
+#    Then user is on "Respond to contract offer" page
 
-  Scenario: FM Supplier - Dashboard - Received Offers - Respond to the contract offer
+## FM-1076
+#  Scenario: FM Supplier - Dashboard - Accepted offers
+#
+#    Given the user is on the "FM Home" page
+#    When user is on "Dashboard" page
+#    And user clicks "FM 895_DA"
+#    Then user is on "Accepted offer" page
 
-    Given the user is on the "FM Home" page
-    When user is on "Dashboard" page
-    And user clicks "Auto_20200320_11e21384-d632-423c-9d79-638c642b93afAuto_20200320_Contract_71401189-92de-4c62-8343-a51"
-    #Then user is on "Received offer" page
-    Then user is on "Respond to contract offer" page
+# As FM-1076
+#  Scenario: FM Supplier - Dashboard - Contracts
+#
+#    Given the user is on the "FM Home" page
+#    When user is on "Dashboard" page
+#    And user clicks "0013"
+#    Then user is on "Contract accepted signed" page
 
 
+# FM-1077
+#  Scenario: FM Supplier - Dashboard - Contract - Closed - Not responded
+#
+#    Given the user is on the "FM Home" page
+#    When user is on "Dashboard" page
+#    And user clicks "3131"
 
+#  Scenario: FM Supplier - Dashboard - Contract - Closed - Not signed
+#
+#    Given the user is on the "FM Home" page
+#    When user is on "Dashboard" page
+#    And user clicks "test 1234"
+
+#  Scenario: FM Supplier - Dashboard - Contract - Closed - Declined
+#
+#    Given the user is on the "FM Home" page
+#    When user is on "Dashboard" page
+#    And user clicks "0021"
+#    Then user is on "Contract declined" page
+
+#  Scenario: FM Supplier - Dashboard - Contract - Closed - Withdrawn
+#
+#    Given the user is on the "FM Home" page
+#    When user is on "Dashboard" page
+#    And user clicks "0015"
