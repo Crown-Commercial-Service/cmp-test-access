@@ -9,14 +9,14 @@ Feature:  FM - Accessibility - Admin
 #    Given the user is on the "FM Home" page
 #    When user is on "Sign in error" page
 
-# FM-1083
+# FM-1083 Done
 #  Scenario: FM Admin - Sign in to your account - Dashboard
 #    Given the user is on the "FM Home" page
 #    When user clicks "Sign in with Cognito"
 #    When user is on "Dashboard" page
 
-# FM-1084
-# FM-1085
+# FM-1084 Done
+# FM-1085 Done
 #  Scenario: FM Admin - Dashboard - Assessed Value - Average Framework Rates
 #    Given the user is on the "FM Home" page
 #    When user clicks "Sign in with Cognito"
@@ -31,7 +31,7 @@ Feature:  FM - Accessibility - Admin
 #    Then user clicks "Call-off benchmark rates"
 
 
-# FM-1087
+# FM-1087 Done
 #  Scenario: FM Admin - Dashboard - Supplier Data - Supplier Framework Data
 #    Given the user is on the "FM Home" page
 #    When user clicks "Sign in with Cognito"
@@ -47,7 +47,7 @@ Feature:  FM - Accessibility - Admin
 #    When user clicks "Supplier framework data"
 #    Then user clicks "Open all"
 
-# FM-1090
+# FM-1090 Data
 #  Scenario: FM Admin - Dashboard - Supplier Data - Supplier Framework Data - Supplier
 #    Given the user is on the "FM Home" page
 #    When user clicks "Sign in with Cognito"
@@ -65,7 +65,7 @@ Feature:  FM - Accessibility - Admin
 #    When user clicks "Halvorson, Corwin and O'Connell"
 #    Then user clicks "Services, prices and variances"
 
-# FM-1092
+# FM-1092 Done
 #  Scenario: FM Admin - Dashboard - Supplier Framework Data - Supplier - Regions
 #    Given the user is on the "FM Home" page
 #    When user clicks "Sign in with Cognito"
@@ -83,7 +83,7 @@ Feature:  FM - Accessibility - Admin
 #      When user clicks "Halvorson, Corwin and O'Connell"
 #      Then user clicks "Services"
 
-# FM-1096
+# FM-1096 Done
 #  Scenario: FM Admin - Dashboard - Management Report
 #    Given the user is on the "FM Home" page
 #    When user clicks "Sign in with Cognito"
