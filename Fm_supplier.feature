@@ -40,14 +40,15 @@ Feature:  FM - Accessibility - Supplier
 #    And user clicks "Auto_20200320_11e21384-d632-423c-9d79-638c642b93afAuto_20200320_Contract_71401189-92de-4c62-8343-a51"
 #    Then user is on "Received offer" page
 
-## FM-1075
+# FM-1075 Done
 #  Scenario: FM Supplier - Dashboard - Received Offers - Respond to the contract offer
 #
 #    Given the user is on the "FM Home" page
 #    When user is on "Dashboard" page
-#    And user clicks "Auto_20200320_11e21384-d632-423c-9d79-638c642b93afAuto_20200320_Contract_71401189-92de-4c62-8343-a51"
+#    And user clicks "Auto_20200511_c4f9042e-40c4-4ac8-9256-28eacc378eeaAuto_20200511_Contract_fc4f74ea-4fc9-40d1-99fc-a13"
 #    #Then user is on "Received offer" page
 #    Then user is on "Respond to contract offer" page
+#    Then sleep "9"
 
 ## FM-1076
 #  Scenario: FM Supplier - Dashboard - Accepted offers
@@ -85,6 +86,9 @@ Feature:  FM - Accessibility - Supplier
 #    When user is on "Dashboard" page
 #    And user clicks "0021"
 #    Then user is on "Contract declined" page
+
+
+
 
 #  Scenario: FM Supplier - Dashboard - Contract - Closed - Withdrawn
 #

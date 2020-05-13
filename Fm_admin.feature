@@ -73,20 +73,20 @@ Feature:  FM - Accessibility - Admin
 #    When user clicks "Supplier framework data"
 #    When user clicks "Kulas, Schultz and Moore"
 #    Then user clicks "Regions"
-  
-## FM-1093
+
+## FM-1093 Done
 #    Scenario: FM Admin - Dashboard - Supplier Framework Data - Supplier - Services
+#      Given the user is on the "FM Home" page
+#      When user clicks "Sign in with Cognito"
+#      When user is on "Dashboard" page
+#      When user clicks "Supplier framework data"
+#      When user clicks "Halvorson, Corwin and O'Connell"
+#      Then user clicks "Services"
+
+# FM-1096
+#  Scenario: FM Admin - Dashboard - Management Report
 #    Given the user is on the "FM Home" page
 #    When user clicks "Sign in with Cognito"
 #    When user is on "Dashboard" page
-#    When user clicks "Supplier framework data"
-#    When user clicks "Halvorson, Corwin and O'Connell"
-#    Then user clicks "Services"
-
-# FM-1096
-  Scenario: FM Admin - Dashboard - Management Report
-    Given the user is on the "FM Home" page
-    When user clicks "Sign in with Cognito"
-    When user is on "Dashboard" page
-    When user clicks "Management report"
-    When user clicks "Generate and download report"
+#    When user clicks "Management report"
+#    When user clicks "Generate and download report"
