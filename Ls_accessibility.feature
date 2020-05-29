@@ -1,5 +1,3 @@
-
-
 Feature:  LS - Accessibility
 
 
@@ -23,7 +21,7 @@ Feature:  LS - Accessibility
 
   Scenario: LS - Fees under 20000 page
     Given the user is on the "LS Home" page
-    When user clicks "Start now"
+    When user clicks "Sta`rt now"
     When user clicks "Sign in with Cognito"
     When user is on "Do you work for central government" page
     Then user is on "Will the fees be under £20,000 per matter" page

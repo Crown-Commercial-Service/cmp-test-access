@@ -520,25 +520,25 @@ Feature:  FM - Accessibility DA In Draft
 #    And user clicks "accessibility1"
 #    And user clicks "Select buildings"
 #
-#  Scenario: FM - Detailed Search - Select services
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    And user clicks "accessibility"
-#    And user clicks "Select services"
-#
-#  Scenario: FM - Detailed Search - Select services - Save and Continue
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    And user clicks "accessibility"
-#    And user clicks "Select services"
+  Scenario: FM - Detailed Search - Select services
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    And user clicks "accessibility"
+    And user clicks "Select services"
+
+  Scenario: FM - Detailed Search - Select services - Save and Continue
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    And user clicks "accessibility"
+    And user clicks "Select services"
 ##    And user clicks "next_step"
-#
+
 ## Moderate
 #  Scenario: FM - Detailed Search - Service Information
 #    Given the user is on the "FM Home" page
@@ -560,29 +560,29 @@ Feature:  FM - Accessibility DA In Draft
 #    #And user clicks "accessibility4"
 #    And user clicks "900"
 #    And user is on "results" page
-##
-#
-#  Scenario: FM - Detailed Search - Direct award pricing
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    When user clicks "accessibility5"
-#    Then user is on the "Direct award pricing" page
-#
-#
-#  Scenario: FM - Detailed Search - What happens next
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    When user clicks "accessibility5"
-#    Then user is on the "What happens next" page
-#    Then user clicks "Show all"
-#
-#
+
+
+  Scenario: FM - Detailed Search - Direct award pricing
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    When user clicks "accessibility5"
+    Then user is on the "Direct award pricing" page
+
+
+  Scenario: FM - Detailed Search - What happens next
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    When user clicks "accessibility5"
+    Then user is on the "What happens next" page
+    Then user clicks "Show all"
+
+
 # ToDo Maint
 #  Scenario: FM - Detailed Search - Important information
 #    Given the user is on the "FM Home" page
@@ -594,14 +594,14 @@ Feature:  FM - Accessibility DA In Draft
 #    Then user is on the "Important information" page
 
 
-#  Scenario: FM - Detailed Search - Contract page
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    When user clicks "accessibility6"
-#    Then user is on the "Contract details" page
+  Scenario: FM - Detailed Search - Contract page
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    When user clicks "accessibility6"
+    Then user is on the "Contract details" page
 
 
   Scenario: FM - Detailed Search - Payment method
@@ -617,17 +617,17 @@ Feature:  FM - Accessibility DA In Draft
     Then user clicks "save_and_return"
 
 
-#  Scenario: FM - Detailed Search - Invoicing contact details
-#
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    When user clicks "accessibility7"
-#    Then user is on the "Contract details" page
-#    When user clicks link "Invoicing contact details"
-#    Then user clicks "commit"
+  Scenario: FM - Detailed Search - Invoicing contact details
+
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    When user clicks "accessibility7"
+    Then user is on the "Contract details" page
+    When user clicks link "Invoicing contact details"
+    Then user clicks "commit"
 
 
 ## ToDo Maint
@@ -684,82 +684,82 @@ Feature:  FM - Accessibility DA In Draft
 #    And user clicks "commit"
 
 
-#  Scenario: FM - Detailed Search - Authorised representative details
-#
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    When user clicks "accessibility7"
-#    Then user is on the "Contract details" page
-#    When user clicks link "Authorised representative details"
-#    Then user clicks "commit"
+  Scenario: FM - Detailed Search - Authorised representative details
+
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    When user clicks "accessibility7"
+    Then user is on the "Contract details" page
+    When user clicks link "Authorised representative details"
+    Then user clicks "commit"
 
 
-#  Scenario: FM - Detailed Search - New authorised representative details
-#
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    When user clicks "accessibility7"
-#    Then user is on the "Contract details" page
-#    When user clicks link "Authorised representative details"
-#    And user chooses "facilities_management_procurement_using_buyer_detail_for_authorised_detail_false"
-#    Then user clicks "commit"
-#    Then user clicks "commit"
+  Scenario: FM - Detailed Search - New authorised representative details
+
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    When user clicks "accessibility7"
+    Then user is on the "Contract details" page
+    When user clicks link "Authorised representative details"
+    And user chooses "facilities_management_procurement_using_buyer_detail_for_authorised_detail_false"
+    Then user clicks "commit"
+    Then user clicks "commit"
 
 
-#  Scenario: FM - Detailed Search - New authorised representative details - Find address
-#
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    When user clicks "accessibility7"
-#    Then user is on the "Contract details" page
-#    When user clicks link "Authorised representative details"
-#    And user chooses "facilities_management_procurement_using_buyer_detail_for_authorised_detail_false"
-#    Then user clicks "commit"
-#    Then user clicks "commit"
-#    When user enters "WC2A1AA" in "buyer-details-postcode"
-#    And user clicks link "buyer-details-find-address-btn"
-#    And user clicks link "buyer-details-postcode-lookup-results"
+  Scenario: FM - Detailed Search - New authorised representative details - Find address
+
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    When user clicks "accessibility7"
+    Then user is on the "Contract details" page
+    When user clicks link "Authorised representative details"
+    And user chooses "facilities_management_procurement_using_buyer_detail_for_authorised_detail_false"
+    Then user clicks "commit"
+    Then user clicks "commit"
+    When user enters "WC2A1AA" in "buyer-details-postcode"
+    And user clicks link "buyer-details-find-address-btn"
+    And user clicks link "buyer-details-postcode-lookup-results"
 
 
-#  Scenario: FM - Detailed Search - New authorised representative details - Add address
-#
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    When user clicks "accessibility7"
-#    Then user is on the "Contract details" page
-#    When user clicks link "Authorised representative details"
-#    And user chooses "facilities_management_procurement_using_buyer_detail_for_authorised_detail_false"
-#    Then user clicks "commit"
-#    Then user clicks "commit"
-#    When user clicks "I can't find my address in the list"
-#    Then user is on the "New authorised representative details" page
-#    And user is on the "Add address" page
-#    And user clicks "commit"
-#
-#
-#  Scenario: FM - Detailed Search - Notices contact details
-#
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    When user clicks "accessibility7"
-#    Then user is on the "Contract details" page
-#    When user clicks link "Notices contact details"
-#    Then user clicks "commit"
+  Scenario: FM - Detailed Search - New authorised representative details - Add address
+
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    When user clicks "accessibility7"
+    Then user is on the "Contract details" page
+    When user clicks link "Authorised representative details"
+    And user chooses "facilities_management_procurement_using_buyer_detail_for_authorised_detail_false"
+    Then user clicks "commit"
+    Then user clicks "commit"
+    When user clicks "I can't find my address in the list"
+    Then user is on the "New authorised representative details" page
+    And user is on the "Add address" page
+    And user clicks "commit"
+
+
+  Scenario: FM - Detailed Search - Notices contact details
+
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    When user clicks "accessibility7"
+    Then user is on the "Contract details" page
+    When user clicks link "Notices contact details"
+    Then user clicks "commit"
 
 
 ##  ToDo Maint
@@ -1000,13 +1000,13 @@ Feature:  FM - Accessibility DA In Draft
     And user clicks "commit"
 
 
-#  Scenario: FM - Detailed Search - Contract details
-#
-#    Given the user is on the "FM Home" page
-#    When user clicks "Start now"
-#    When user clicks "Sign in with Cognito"
-#    When user is on "Procurements" page
-#    Then user is on "Procurements dashboard" page
-#    When user clicks "accessibility9"
-#    Then user is on the "Contract details" page
-#    When user clicks link "Expand all contract details"
+  Scenario: FM - Detailed Search - Contract details
+
+    Given the user is on the "FM Home" page
+    When user clicks "Start now"
+    When user clicks "Sign in with Cognito"
+    When user is on "Procurements" page
+    Then user is on "Procurements dashboard" page
+    When user clicks "accessibility9"
+    Then user is on the "Contract details" page
+    When user clicks link "Expand all contract details"

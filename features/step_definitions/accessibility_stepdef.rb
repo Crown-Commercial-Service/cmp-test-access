@@ -288,6 +288,8 @@ When(/^user is on "([^"]*)" page$/) do |page1|
       find(:css,'#main-content > div.govuk-\!-font-size-19 > div.govuk-\!-width-three-quarters.govuk-\!-font-size-19 > dl > table > tbody > tr:nth-child(2) > td > details > summary > span').click
     when 'contract declined'
       find(:css,'#main-content > div.govuk-\!-width-two-thirds.govuk-\!-margin-bottom-6 > details > summary > span').click
+    when 'contract value'
+      find(:css,'#edit_facilities_management_procurement_44cbdd66-8c43-4350-8ae4-00e11fada168 > div:nth-child(7) > div > details > summary > span').click
     when 'checks'
       #
     else

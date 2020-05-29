@@ -29,9 +29,9 @@ Capybara.default_driver = :selenium
 #  E N V I R O N M E N T S
 #
 # # # # # # # # # # # # #
-$envFM = 'https://cmp.cmpdev.crowncommercial.gov.uk/facilities-management/beta'
+$envFM = 'https://cmp.cmpdev.crowncommercial.gov.uk/facilities-management'
 #$envFM = $envFM + '/supplier'
-$envFM = $envFM + '/admin'
+#$envFM = $envFM + '/admin'
 #$envFM = 'https://cmp.fm-preview.crowncommercial.gov.uk/facilities-management/beta'
 #$envLS = 'https://cmp.cmpdev.crowncommercial.gov.uk/legal-services'
 $envLS = 'https://marketplace.preview.crowncommercial.gov.uk/legal-services/sign-in'
@@ -45,10 +45,3 @@ $envMC = 'https://marketplace.preview.crowncommercial.gov.uk/management-consulta
 #  D A T A
 #
 # # # # # # # # # # # # #
-$user = "autotest1@crowncommercial.gov.uk"
-$p = "1Pass2!?"
-#$user = 'halvorson-corwin-oconnell@yopmail.com'
-#$p = 'Test12345!'
-#$user = "iulia@ionita.me"
-#$p = "Test12345!"
-
